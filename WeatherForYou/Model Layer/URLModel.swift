@@ -15,7 +15,7 @@ struct URLModel {
     func createURL(forZipCode: String) -> URL? {
         
         if ZipCodeValidator().validateZipCode(forZipCode: forZipCode) {
-            let newURLString = baseURL + forZipCode
+            let newURLString = baseURL + "?zip_code=" + forZipCode
             guard let newURL = URL(string: newURLString) else { return nil }
             return newURL
         } else {
@@ -28,7 +28,7 @@ struct URLModel {
 struct ZipCodeValidator {
     
     func validateZipCode(forZipCode: String) -> Bool {
-        if forZipCode.count != 6 {
+        if forZipCode.count != 5 {
             return false
         } else {
             return true
