@@ -33,8 +33,9 @@ class WeatherDetailViewController: UIViewController, SCNSceneRendererDelegate {
         conditionsLabel.text = "Current Conditions: \(weather.current_conditions)"
         weatherLabel.text = "Current Weather: \(weather.current_weather.capitalized)"
         
-        
         sceneView.delegate = self
+        
+        sceneView.scene = WeatherScenes().loadScene(withWeatherCondition: weather.current_weather)
         
         
     }
@@ -54,4 +55,33 @@ class WeatherDetailViewController: UIViewController, SCNSceneRendererDelegate {
     }
     */
 
+}
+
+struct WeatherScenes {
+    
+    let cloudScene = SCNScene(named: "art.scnassets/cloud.scn")!
+    let rainScene = SCNScene(named: "art.scnassets/umbrella.scn")!
+    let clearScene = SCNScene(named: "art.scnassets/rainbow.scn")!
+    let dayScene = SCNScene(named: "art.scnassets/sun.scn")!
+    
+    // clear day, clear night, rain, snow, sleet, wind, fog, cloudy, partly cloudy day, or partly cloudy night
+    
+    func loadScene(withWeatherCondition weather: String) -> SCNScene {
+        switch weather {
+        case "partly cloudy-night":
+            return cloudScene
+        case "party cloud-day":
+            return cloudScene
+        case "rain":
+            return rainScene
+        case "clear night":
+            return clearScene
+        case "clear day":
+            return dayScene
+        default:
+            return clearScene
+        }
+    }
+    
+    
 }

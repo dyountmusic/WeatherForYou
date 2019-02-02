@@ -135,7 +135,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <sceneKitView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" sceneName="WeatherScene.scn" translatesAutoresizingMaskIntoConstraints="NO" id="sza-nH-j4T">
+                            <sceneKitView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" allowsCameraControl="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sza-nH-j4T">
                                 <rect key="frame" x="16" y="222" width="343" height="223"/>
                             </sceneKitView>
                         </subviews>

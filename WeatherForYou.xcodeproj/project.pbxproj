@@ -18,7 +18,7 @@
 		EAB752EE2205696600A50D70 /* WeatherCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB752ED2205696600A50D70 /* WeatherCollectionViewCell.swift */; };
 		EAB752F022056D0D00A50D70 /* WeatherDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB752EF22056D0D00A50D70 /* WeatherDetailViewController.swift */; };
 		EAB752F3220570D900A50D70 /* WeatherColorCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB752F2220570D900A50D70 /* WeatherColorCoordinator.swift */; };
-		EAB752F5220575F700A50D70 /* WeatherScene.scn in Resources */ = {isa = PBXBuildFile; fileRef = EAB752F4220575F700A50D70 /* WeatherScene.scn */; };
+		EAB752FB22057B0100A50D70 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = EAB752FA22057B0100A50D70 /* art.scnassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,7 +35,7 @@
 		EAB752ED2205696600A50D70 /* WeatherCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherCollectionViewCell.swift; sourceTree = "<group>"; };
 		EAB752EF22056D0D00A50D70 /* WeatherDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDetailViewController.swift; sourceTree = "<group>"; };
 		EAB752F2220570D900A50D70 /* WeatherColorCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherColorCoordinator.swift; sourceTree = "<group>"; };
-		EAB752F4220575F700A50D70 /* WeatherScene.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = WeatherScene.scn; sourceTree = "<group>"; };
+		EAB752FA22057B0100A50D70 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,9 +73,9 @@
 				EA2806112204190700540216 /* Controller Layer */,
 				EA2805FC220416D500540216 /* Main.storyboard */,
 				EA2805FF220416D600540216 /* Assets.xcassets */,
-				EAB752F4220575F700A50D70 /* WeatherScene.scn */,
 				EA280601220416D600540216 /* LaunchScreen.storyboard */,
 				EA280604220416D600540216 /* Info.plist */,
+				EAB752FA22057B0100A50D70 /* art.scnassets */,
 			);
 			path = WeatherForYou;
 			sourceTree = "<group>";
@@ -191,9 +191,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EAB752F5220575F700A50D70 /* WeatherScene.scn in Resources */,
 				EA280603220416D600540216 /* LaunchScreen.storyboard in Resources */,
 				EA280600220416D600540216 /* Assets.xcassets in Resources */,
+				EAB752FB22057B0100A50D70 /* art.scnassets in Resources */,
 				EA2805FE220416D500540216 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
